@@ -49,7 +49,7 @@ int main()
             if(map[Heroindex][choose] == 1)
             {
                 Herostep++;
-                if(Hero->level == 10)
+                if(Herostep == 50)
                 {
                     bossindex = rand() % WIDTH + 1;
                     attribute[bossindex] = 4;
