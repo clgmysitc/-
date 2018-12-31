@@ -87,8 +87,6 @@ void ally_event()
                     Hero->money-=random_healmoney;
                     random_healmoney+=2;
                     situation();
-                    printf("your hp add to %d.\n", Hero->hp);
-                    printf("you left %d money.\n", Hero->money);
                 }
                 break;
                 case 3:
@@ -102,8 +100,6 @@ void ally_event()
                     Hero->money-=random_atkmoney;
                     random_atkmoney+=2;
                     situation();
-                    printf("your atk add to %d.\n", Hero->atk);
-                    printf("you left %d monet.\n", Hero->money);
                 }
                 break;
                 case 4:
@@ -117,10 +113,6 @@ void ally_event()
                     Hero->money-=random_defmoney;
                     random_defmoney +=2;
                     situation();
-                    printf("\n============================================\n");
-                    printf("your atk is %d now.\n", Hero->def);
-                    printf("you left %d money.\n", Hero->money);
-                    printf("\n============================================\n");
                 }
                 break;
             }
@@ -155,19 +147,20 @@ void enemy_event()
     random_badguy = rand() % level_ch[Level];
     random_lose = rand() % 30 + 10;
 
-    memcpy(monster, all_character[Level][random_badguy], sizeof(character) );
-    printf("\n============================================\n");
-    printf("you encounter a %s monster!!!!!.\n", monster->name);
-    printf("hp: %d\n", monster->hp);
-    printf("atk: %d\n", monster->atk);
-    printf("def: %d\n", monster->def);
-    printf("\n\n");
-    printf("if you want to talk, enter '1' .\n");
-    printf("if you want to battle, enter '2' .\n");
-    printf("if you want to escape enter '3',but you will lose %d hp.\n", random_lose);
+
 
     while(1)
     {
+        memcpy(monster, all_character[Level][random_badguy], sizeof(character) );
+        printf("\n============================================\n");
+        printf("you encounter a %s monster!!!!!.\n", monster->name);
+        printf("hp: %d\n", monster->hp);
+        printf("atk: %d\n", monster->atk);
+        printf("def: %d\n", monster->def);
+        printf("\n\n");
+        printf("if you want to talk, enter '1' .\n");
+        printf("if you want to battle, enter '2' .\n");
+        printf("if you want to escape enter '3',but you will lose %d hp.\n", random_lose);
         scanf("%s", code);
         system("cls");
         if( code[0]=='3'&& strlen(code)==1)
@@ -193,7 +186,8 @@ void enemy_event()
             if(choice==1)
             {
                 printf("Let's battle.\n");
-                return;
+                printf("\n============================================\n");
+                continue;
             }
             else if(choice==2)
             {
@@ -221,6 +215,7 @@ void trap_event()
     printf("Enter '1' to lost %d money.\n", lost_money);
     printf("Enter '2' to lost %d hp.\n", lost_hp);
     printf("Enter wrong command will lost both hp and money.\n");
+    printf("\n============================================\n");
     scanf("%d", &i);
     system("cls");
     if(i==1)
@@ -281,13 +276,15 @@ void treasure_event()
         system("cls");
         random = rand() % 400;
         Hero->money+=random;
+        printf("\n============================================\n");
         printf("you get %d money!!!!!!\n", random);
         printf("you have %d money now.\n", Hero->money);
+        printf("\n============================================\n");
         break;
 
         case 2:
         system("cls");
-        printf("\n======================\n\n");
+        printf("\n============================================\n");
         printf("you get a armor!!!!!\n");
         random = rand() % arm_amount;
         strcpy(str,arm_list[random]);
@@ -297,6 +294,7 @@ void treasure_event()
         arm_inventory[num_armors].def+= rand() % 50;
         printf("you get %s !!!!!!\n", arm_inventory[num_armors].name);
         printf("its def is %d\n",arm_inventory[num_armors].def);
+        printf("\n============================================\n");
         num_armors++;
         free(tarm_save);
         break;
@@ -307,11 +305,12 @@ void treasure_event()
         strcpy(str,item_list[random]);
         strcat(str,a);
         titem_save = item_init(str);
-        printf("\n======================\n\n");
+        printf("\n============================================\n");
         printf("you get a item!!!!!!\n");
         memcpy( &item_inventory[num_items], titem_save, sizeof(struct item) );
         printf("you get %s !!!!!!!\n", item_inventory[num_items].name);
         printf("its heal is %d\n",item_inventory[num_items].heal);
+        printf("\n============================================\n");
         num_items++;
         free(titem_save);
         break;
@@ -346,7 +345,8 @@ void boss_event()
             {
                 printf("%s you finally come here.\n", Hero->name);
                 printf("Let's battle and you will lose.\n");
-                return;
+                printf("\n============================================\n");
+                continue;
             }
 
             else if(code[0]=='2')
@@ -362,15 +362,15 @@ void boss_event()
     }
     if(Hero->hp>0)
     {
-        printf("----------------------------------------------\n");
-        printf("|                   You win!!!!                |\n");
-        printf("|               Congraguation!!!!!             |\n");
-        printf("----------------------------------------------\n");
-        printf("enter '1' to continue the game.\n");
-        printf("enter '2' to quit game.\n");
-        scanf("%s", code);
         while(1)
         {
+            printf("----------------------------------------------\n");
+            printf("|                   You win!!!!                |\n");
+            printf("|               Congraguation!!!!!             |\n");
+            printf("----------------------------------------------\n");
+            printf("enter '1' to continue the game.\n");
+            printf("enter '2' to quit game.\n");
+            scanf("%s", code);
             if(strlen(code)==1)
             {
                 if(code[0]=='1')
@@ -378,6 +378,7 @@ void boss_event()
                     attribute[bossindex] = rand() % 4;
                     bossindex = rand()% WIDTH + 1;
                     attribute[bossindex] = 4;
+                    system("cls");
                     return;
                 }
                 else if(code[0]=='2')
@@ -416,6 +417,7 @@ void talkoption()
                 if(Hero->money-boss_money>=0)
                 {
                     printf("The boss is on %d", bossindex);
+                    return;
                 }
 
             }

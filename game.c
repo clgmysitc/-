@@ -59,7 +59,9 @@ int main()
             }
             else
             {
+                system("cls");
                 printf("Wrong destination.\n");
+                printf("\n===========================\n\n");
             }
         }
 

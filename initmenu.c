@@ -82,7 +82,7 @@ int CharacterChoose()//選擇角色
         {
             return 0;
         }
-        else if(strlen(code)==1&&is_number(code))
+        else if(strlen(code)==1 && is_number(code))
         {
             Index = atoi(code);
             YesorNo = Characterinform(Index-1);
@@ -127,20 +127,21 @@ int Characterinform(int Index)//角色選擇時的資料
 
     detail = ch_init(str);
 
-    printf("level: %d\n", detail->level);
-    printf("name: %s\n", detail->name);
-    printf("sex: %s\n", detail->sex);
-    printf("hp: %d\n", detail->hp);
-    printf("atk: %d\n", detail->atk);
-    printf("def: %d\n", detail->def);
-    printf("reh: %d\n", detail->reh);
-    printf("\n============================================\n");
-    printf("if want to back enter 'q'\n");
-    printf("if want to choose enter 'y'\n");
-    scanf("%s",code);
-    system("cls");
+
     while(1)
     {
+        printf("level: %d\n", detail->level);
+        printf("name: %s\n", detail->name);
+        printf("sex: %s\n", detail->sex);
+        printf("hp: %d\n", detail->hp);
+        printf("atk: %d\n", detail->atk);
+        printf("def: %d\n", detail->def);
+        printf("reh: %d\n", detail->reh);
+        printf("\n============================================\n");
+        printf("if want to back enter 'q'\n");
+        printf("if want to choose enter 'y'\n");
+        scanf("%s",code);
+        system("cls");
         if(strlen(code)==1)
         {
             if(code[0]=='q')

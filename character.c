@@ -101,7 +101,7 @@ void Getallcharacter()
         while(fgetc(fp) != '\n');
         for(int j=0; j < level_ch[i];j++)
         {
-            fgets(bad_ch, 20, fp);
+            fgets(bad_ch, 30, fp);
             bad_ch[strlen(bad_ch)-1]='\0';
             strcat(bad_ch,a);
             all_character[i][j] = badch_init(bad_ch);

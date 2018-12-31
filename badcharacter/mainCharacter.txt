@@ -14,8 +14,11 @@ witch3
 2
 giant4
 hatero4
-4
+5
 Boss1
 Boss2
 Boss3
 Boss4
+Boss5
+
+

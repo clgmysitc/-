@@ -136,13 +136,13 @@ void Getwepname()
     fscanf(fp,"%d", &wep_amount);//讀武器數量
     wep_list = (char**) malloc( sizeof(char*) * wep_amount );//給予武器字串空間去儲存
     for(int i=0; i < wep_amount ; i++)
-        wep_list[i] = (char* ) malloc( sizeof(char) * 20);
+        wep_list[i] = (char* ) malloc( sizeof(char) * 30);
 
-    fgets(wep_list[0], 20, fp);
+    fgets(wep_list[0], 30, fp);
 
     for(int i=0; i < wep_amount; i++)
     {
-        fgets(wep_list[i], 20, fp);
+        fgets(wep_list[i], 30, fp);
         wep_list[i][strlen(wep_list[i])-1]=0;
     }
 
