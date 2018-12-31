@@ -276,7 +276,7 @@ void monster_term()
     }
 }
 
-int battle_quit()
+int battle_quit()//判斷結束條件
 {
     if(Hero->hp<=0) return -1;
     else if(quit == 1) return 0;
