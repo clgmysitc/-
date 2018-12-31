@@ -40,6 +40,7 @@ int main()
         printf("\n");
         printf("if you want to open menu, enter 'm' .\n");
         scanf("%s", code);
+        Hero->hp+=Hero->reh;
         system("cls");
         situation();
 

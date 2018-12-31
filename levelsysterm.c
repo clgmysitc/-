@@ -14,5 +14,6 @@ void level_up()
         Hero->hp += 250;
         Hero->atk+=20;
         Hero->def+=20;
+        Hero->reh+=20;
     }
 }
