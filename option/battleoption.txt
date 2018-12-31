@@ -1,0 +1,6 @@
+5
+attack
+defense
+skill
+item
+escape

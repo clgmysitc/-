@@ -1,0 +1,9 @@
+7
+higherpotion
+potion
+verb
+Golden medicine
+Spiritual pill
+Fountain of recovery
+pork
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="termproject" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/termproject" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/termproject" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Item.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Item/Fountain of recovery.txt" />
+		<Unit filename="Item/Golden medicine.txt" />
+		<Unit filename="Item/Spiritual pill.txt" />
+		<Unit filename="Item/higherpotion.txt" />
+		<Unit filename="Item/itemname.txt" />
+		<Unit filename="Item/pork.txt" />
+		<Unit filename="Item/potion.txt" />
+		<Unit filename="Item/verb.txt" />
+		<Unit filename="alien/Adventurer.txt" />
+		<Unit filename="alien/Hermit.txt" />
+		<Unit filename="alien/Pharmacist.txt" />
+		<Unit filename="alien/Trader.txt" />
+		<Unit filename="alien/mainCharacter.txt" />
+		<Unit filename="armor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="armor.h" />
+		<Unit filename="armor/Copper armor.txt" />
+		<Unit filename="armor/Crocodile.txt" />
+		<Unit filename="armor/Iron armor.txt" />
+		<Unit filename="armor/Keel shirt.txt" />
+		<Unit filename="armor/Leather armor.txt" />
+		<Unit filename="armor/Promise Robe.txt" />
+		<Unit filename="armor/Qing robes.txt" />
+		<Unit filename="armor/armname.txt" />
+		<Unit filename="badcharacter/Boss1.txt" />
+		<Unit filename="badcharacter/Boss2.txt" />
+		<Unit filename="badcharacter/Madman2.txt" />
+		<Unit filename="badcharacter/Martialartist2.txt" />
+		<Unit filename="badcharacter/archer1.txt" />
+		<Unit filename="badcharacter/assassin2.txt" />
+		<Unit filename="badcharacter/bandit1.txt" />
+		<Unit filename="badcharacter/giant4.txt" />
+		<Unit filename="badcharacter/hatero4.txt" />
+		<Unit filename="badcharacter/knight3.txt" />
+		<Unit filename="badcharacter/mainCharacter.txt" />
+		<Unit filename="badcharacter/thief1.txt" />
+		<Unit filename="badcharacter/witch3.txt" />
+		<Unit filename="badcharacter/zombie1.txt" />
+		<Unit filename="battlesysterm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="battlesysterm.h" />
+		<Unit filename="character.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="character.h" />
+		<Unit filename="character/A tz.txt" />
+		<Unit filename="character/Duan Yu.txt" />
+		<Unit filename="character/Mu Wan Ching.txt" />
+		<Unit filename="character/Shiu ju.txt" />
+		<Unit filename="character/Xiao Feng.txt" />
+		<Unit filename="character/mainCharacter.txt" />
+		<Unit filename="event.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="event.h" />
+		<Unit filename="game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initmenu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initmenu.h" />
+		<Unit filename="item.h" />
+		<Unit filename="levelsysterm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="levelsysterm.h" />
+		<Unit filename="map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="map.h" />
+		<Unit filename="menuingame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menuingame.h" />
+		<Unit filename="option/battleoption.txt" />
+		<Unit filename="option/optionname.txt" />
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utils.h" />
+		<Unit filename="weapon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="weapon.h" />
+		<Unit filename="weapon/Fruitknife.txt" />
+		<Unit filename="weapon/Ironsword.txt" />
+		<Unit filename="weapon/Katana.txt" />
+		<Unit filename="weapon/Leatherwhip.txt" />
+		<Unit filename="weapon/Pike.txt" />
+		<Unit filename="weapon/Twohandedsword.txt" />
+		<Unit filename="weapon/Wand.txt" />
+		<Unit filename="weapon/wepname.txt" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

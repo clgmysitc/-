@@ -1,0 +1,159 @@
+# depslib dependency file v1.0
+1546021284 source:c:\users\fb-3210\desktop\termproject\termproject\character.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"character.h"
+	"weapon.h"
+	"utils.h"
+
+1546185559 c:\users\fb-3210\desktop\termproject\termproject\character.h
+
+1546184950 c:\users\fb-3210\desktop\termproject\termproject\weapon.h
+
+1546186173 c:\users\fb-3210\desktop\termproject\termproject\utils.h
+
+1546197200 source:c:\users\fb-3210\desktop\termproject\termproject\levelsysterm.c
+	<stdio.h>
+	"levelsysterm.h"
+	"character.h"
+
+1546189392 c:\users\fb-3210\desktop\termproject\termproject\levelsysterm.h
+
+1514140574 source:c:\users\fb-3210\desktop\termproject\termproject\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1546074607 source:c:\users\fb-3210\desktop\termproject\termproject\map.c
+	<stdio.h>
+	<stdlib.h>
+	"map.h"
+	"character.h"
+
+1546186101 c:\users\fb-3210\desktop\termproject\termproject\map.h
+
+1545928582 source:c:\users\fb-3210\desktop\termproject\termproject\utils.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utils.h"
+
+1546191756 source:c:\users\fb-3210\desktop\termproject\termproject\armor.c
+	<stdio.h>
+	<stdlib.h>
+	"map.h"
+	"menuingame.h"
+	"armor.h"
+	<string.h>
+	"character.h"
+	"utils.h"
+
+1546186156 c:\users\fb-3210\desktop\termproject\termproject\menuingame.h
+
+1546184894 c:\users\fb-3210\desktop\termproject\termproject\armor.h
+
+1546196247 source:c:\users\fb-3210\desktop\termproject\termproject\event.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"event.h"
+	"character.h"
+	"map.h"
+	"weapon.h"
+	"armor.h"
+	"item.h"
+	"battlesysterm.h"
+	"utils.h"
+	"menuingame.h"
+
+1546185645 c:\users\fb-3210\desktop\termproject\termproject\event.h
+
+1546185124 c:\users\fb-3210\desktop\termproject\termproject\item.h
+
+1546185243 c:\users\fb-3210\desktop\termproject\termproject\battlesysterm.h
+
+1546198039 source:c:\users\fb-3210\desktop\termproject\termproject\menuingame.c
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	"initmenu.h"
+	"menuingame.h"
+	"character.h"
+	"map.h"
+	"armor.h"
+	"weapon.h"
+	"item.h"
+	"utils.h"
+
+1546224421 c:\users\fb-3210\desktop\termproject\termproject\initmenu.h
+
+1546195003 source:c:\users\fb-3210\desktop\termproject\termproject\weapon.c
+	<stdio.h>
+	<stdlib.h>
+	"map.h"
+	"menuingame.h"
+	"weapon.h"
+	"ctype.h"
+	<string.h>
+	"character.h"
+	"utils.h"
+
+1546197056 source:c:\users\fb-3210\desktop\termproject\termproject\battlesysterm.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"initmenu.h"
+	"battlesysterm.h"
+	"character.h"
+	"menuingame.h"
+	"event.h"
+	"item.h"
+	"levelsysterm.h"
+	"utils.h"
+
+1546223624 source:c:\users\fb-3210\desktop\termproject\termproject\game.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	"map.h"
+	"initmenu.h"
+	"event.h"
+	"weapon.h"
+	"armor.h"
+	"item.h"
+	"battlesysterm.h"
+	"menuingame.h"
+	<string.h>
+	"utils.h"
+	"character.h"
+
+1546224637 source:c:\users\fb-3210\desktop\termproject\termproject\initmenu.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	"character.h"
+	"initmenu.h"
+	"map.h"
+	<ctype.h>
+	"armor.h"
+	"weapon.h"
+	"item.h"
+	"battlesysterm.h"
+	"utils.h"
+	"menuingame.h"
+
+1546191745 source:c:\users\fb-3210\desktop\termproject\termproject\item.c
+	<stdio.h>
+	<stdlib.h>
+	"map.h"
+	"menuingame.h"
+	"weapon.h"
+	<string.h>
+	"character.h"
+	"item.h"
+	"utils.h"
+
